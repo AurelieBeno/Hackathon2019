@@ -9,7 +9,7 @@
     <title>Hackathon 2019</title>
   </head>
   <body>
-      <div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="/Background2.png">
         <div id="section1">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
@@ -51,5 +51,20 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script $('.parallax-window').parallax({imageSrc: '/Background2.png'})></script>
+    <script>
+    $(document).ready(function(){
+        $('#nav').localScroll(800);
+        
+        //.parallax(xPosition, speedFactor, outerHeight) options:
+        //xPosition - Horizontal position of the element
+        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+        $('#intro').parallax("50%", 0.1);
+        $('#second').parallax("50%", 0.1);
+        $('.bg').parallax("50%", 0.4);
+        $('#third').parallax("50%", 0.3);
+      
+      })
+      </script>
   </body>
 </html>
