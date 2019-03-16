@@ -1,70 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./Style.css">
-    <title>Hackathon 2019</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery Parallax Plugin Demo</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.parallax-1.1.3.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo|Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body>
-      <div class="parallax-window" data-parallax="scroll" data-image-src="/Background2.png">
-        <div id="section1">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-          </div>
-          <div id="section2">
-              <div class="card" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
+    <div>
+      <nav class="nav navContainer">
+        <div class="left">
+          <a class="nav-link active" href="#">
+            <img class="logoImg" src="./images/logo.png" />
+          </a>
+          <a class="nav-link active" href="#">Logo </a>
+          <a class="nav-link active" href="#">Men </a>
+          <a class="nav-link" href="#">Women</a>
+          <a class="nav-link" href="#">Technologies</a>
+        </div>
+
+        <div class="right">
+          <a class="nav-link disabled" href="#">Sign In</a>
+          <a class="nav-link disabled" href="#">Sign In</a>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <ul id="nav">
+        <li>
+          <a href="#intro" title="Next Section"
+            ><img
+              src="https://ianlunn.co.uk/plugins/jquery-parallax/images/dot.png"
+              alt="Link"
+          /></a>
+        </li>
+        <li>
+          <a href="#second" title="Next Section"
+            ><img
+              src="https://ianlunn.co.uk/plugins/jquery-parallax/images/dot.png"
+              alt="Link"
+          /></a>
+        </li>
+        <li>
+          <a href="#third" title="Next Section"
+            ><img
+              src="https://ianlunn.co.uk/plugins/jquery-parallax/images/dot.png"
+              alt="Link"
+          /></a>
+        </li>
+        <li>
+          <a href="#forth" title="Next Section"
+            ><img
+              src="https://ianlunn.co.uk/plugins/jquery-parallax/images/dot.png"
+              alt="Link"
+          /></a>
+        </li>
+        <li>
+          <a href="#fifth" title="Next Section"
+            ><img
+              src="https://ianlunn.co.uk/plugins/jquery-parallax/images/dot.png"
+              alt="Link"
+          /></a>
+        </li>
+      </ul>
+
+      <div id="intro">
+        <div class="story">
+          <div class="float-left m-top">
+            <div>
+              <h2 class="h1header">Reach the next level</h2>
+              <p class="paraHeader">
+                Connected glasses to keep focus on your climbing experience.
+                <br />
+                <span class="span">
+                  <a class="" href="#"> Learn More</a>
+                </span>
+              </p>
             </div>
-            <div id="section1">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                  </div>
-              </div>
+            <div>
+              <button class="btn paraHeader paraHeaderBtn">
+                Discover Grabs
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--.story-->
       </div>
-      
-    <script src="/Background2.png"></script>
-    <script src="/path/to/parallax.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script $('.parallax-window').parallax({imageSrc: '/Background2.png'})></script>
-    <script>
-    $(document).ready(function(){
-        $('#nav').localScroll(800);
-        
-        //.parallax(xPosition, speedFactor, outerHeight) options:
-        //xPosition - Horizontal position of the element
-        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#intro').parallax("50%", 0.1);
-        $('#second').parallax("50%", 0.1);
-        $('.bg').parallax("50%", 0.4);
-        $('#third').parallax("50%", 0.3);
-      
-      })
-      </script>
+      <!--#intro-->
+
+      <div id="second">
+        <div class="story">
+          <div class="bg"></div>
+          <div class="container-fluide">          <div class="row">
+            <div class="col-6" >
+              <img class="image" src="./images/a.png">
+            </div>
+            <div class="col-6">
+              <h2 class="h1header headerBlack">Enhance your sight</h2>
+              <p class="paraHeader headerBlack">
+                Player customizable <br />
+                Highlighted climbing holds <br />
+                Path recognition <br />
+
+                View sharing <br />
+                Data in-live <br />
+                <br />
+                <span class="span headerBlack">
+                  <a class="" href="#"> Learn More</a>
+                </span>
+              </p>
+            </div>
+            <div>
+              
+              <button class="btn paraHeader paraHeaderBtn discover">
+                Discover Grabs
+              </button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <!--.story-->
+      </div>
+      <!--#second-->
+
+  
+        <!--.story-->
+      </div>
+      <!--#third-->
+      <div id="forth">
+        <div class="story">
+          <div class="float-left">
+            <h2>What Happens When JavaScript is Disabled?</h2>
+            <p>
+              The user gets a slap! Actually, all that jQuery does is moves the
+              backgrounds relative to the position of the scrollbar. Without it,
+              the backgrounds simply stay put and the user would never know they
+              are missing out on the awesome! CSS2 does a good enough job to
+              still make the effect look cool.
+            </p>
+          </div>
+        </div>
+        <!--.story-->
+      </div>
+      <!--#third-->
+      <footer className="page-footer font-small unique-color-dark">
+          <div className="top-footer medias">
+            <div className="container">
+              <div className="row d-flex justify-content-center">
+                <div className="col-12">
+                  <img
+                    class="img-medias"
+                    src="CreditCard copy.png"
+                    alt="Card"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+           
+      </div>
+      <!--#fifth-->
+    </div>
+    <div>
+   
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
